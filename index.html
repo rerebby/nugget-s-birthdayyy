@@ -1,9 +1,38 @@
-const cursor = document.getElementById('cursor');
-document.addEventListener('mousemove', e => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-});
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for you</title>
 
+<style>
+  body {
+    margin: 0;
+    background-color: #0b0c10;
+    color: #ffcad4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #text {
+    max-width: 90%;
+    font-size: 1.4em;
+    line-height: 1.6;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="text"></div>
+
+<script>
 const phrases = [
   "Happy birthday sayang",
   "sekarang ulang tahun yang ke berapa yaaa?",
@@ -125,5 +154,8 @@ function typeSentence() {
   }
 }
 
-textDiv.innerHTML = "";
 typeSentence();
+</script>
+
+</body>
+  </html>
